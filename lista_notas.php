@@ -1,7 +1,8 @@
 <?php include "includes/header.php" ?>
 
 <?php  
-
+  //Configurar zona horaria 
+  date_default_timezone_set('America/Bogota');
   //Mostrar registros
   $query = "SELECT * FROM notas WHERE usuario_id='$idUsuario'";
   $stmt = $conn->query($query);
@@ -19,7 +20,7 @@
                   </div>
                   <div class="col-md-3">
                     <a href="crear_nota.php" type="button" class="btn btn-primary btn-xl pull-right w-100">
-                      <i class="fa fa-plus"></i> Ingresar nueva nota
+                      <i class="fa fa-plus"></i> Ingresar nueva nota:
                     </a>
                 </div>
               </div>

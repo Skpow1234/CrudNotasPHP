@@ -12,7 +12,7 @@
 
         //Mostrar mensaje si la conexión es correcta
         if ($conn) {
-            echo "Conectado a la DB correctamente";
+           // echo "Conectado a la DB correctamente";
         }
 
     } catch (PDOException $e) {
